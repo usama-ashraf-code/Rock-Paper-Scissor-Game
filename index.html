@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Rock, Paper, Scissors</h1>
+        
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <div class="score-block">
+                <span class="score-label">YOU</span>
+                <span id="user-score" class="score-number">0</span>
+            </div>
+            <div class="score-divider">:</div>
+            <div class="score-block">
+                <span class="score-label">COMP</span>
+                <span id="comp-score" class="score-number">0</span>
+            </div>
+        </div>
+
+        <!-- Arena Display -->
+        <div class="arena">
+            <div class="choice-display">
+                <div class="badge">You Chose</div>
+                <div id="user-picked" class="emoji-placeholder">❓</div>
+            </div>
+            <div class="choice-display">
+                <div class="badge">Comp Chose</div>
+                <div id="comp-picked" class="emoji-placeholder">❓</div>
+            </div>
+        </div>
+
+        <!-- Status Message -->
+        <div class="status-box">
+            <p id="game-message">Make your move to start the game!</p>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="buttons-group">
+            <button class="choice-btn" id="rock" data-choice="rock">
+                <span class="btn-emoji">🪨</span>
+                <span class="btn-text">Rock</span>
+            </button>
+            <button class="choice-btn" id="paper" data-choice="paper">
+                <span class="btn-emoji">📄</span>
+                <span class="btn-text">Paper</span>
+            </button>
+            <button class="choice-btn" id="scissor" data-choice="scissors">
+                <span class="btn-emoji">✂️</span>
+                <span class="btn-text">Scissors</span>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
